@@ -26,11 +26,11 @@ class PinLogin {
             const insertBreak = key.search(/[369]/) !== -1;
             const keyEl = document.createElement('div');
 
-            keyEl.classList.add('.pin-login__key');
+            keyEl.classList.add('pin-login__key');
             keyEl.classList.toggle('material-icons', isNaN( key ));
             keyEl.textContent = key;
             keyEl.addEventListener('click', () => { this._handleKeyPress(key) });
-            this.el.keyEl.appendChild( keyEl );
+            this.el.numPad.appendChild( keyEl );
 
             if (insertBreak) {
                 this.el.numPad.appendChild( document.createElement('br') );
@@ -39,11 +39,11 @@ class PinLogin {
     }
 
     _handleKeyPress( key ) {
-        switch(key) {
-            case 'backspace': this.value = this.value.substring(0, this.value.length -1);
+        switch (key) {
+            case 'backspace': this.value = this.value.substring(0, this.value.length -1); break;
             case 'done': this._attempLogin(); break;
             default:
-                if (this.value.length > this.maxNumbers && isNaN( key ) ) {
+                if (this.value.length < this.maxNumbers && !isNaN( key ) ) {
                     this.value += key;
                 }
                 break;
@@ -53,14 +53,14 @@ class PinLogin {
 
     _updateTextDisplay() {
         this.el.textDisplay.value = '_'.repeat(this.value.length);
-        this.el.textDisplay.classList.remove('.pin-login__text--error');
+        this.el.textDisplay.classList.remove('pin-login__text--error');
     }
 
     _attempLogin() {
         if (this.value.length > 0) {
             fetch(this.loginEndpoint, {
                 method: 'post',
-                headers: {'Content-Type': 'Application/x-www-form-url'},
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 body: `pincode=${this.value}`,
             } ).then( response => {
                 if ( response.status === 200 ) {
@@ -72,3 +72,4 @@ class PinLogin {
         }
     }
 }
+
