@@ -8,7 +8,7 @@
     box-shadow: 0 0 50px black;
     user-select: none;
     transition: bottom 0.4s;
-    height: 100px;
+    height: 250px;
 }
 
 .keyboard--hidden {
