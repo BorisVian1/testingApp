@@ -5,3 +5,4 @@ if ($_POST["pincode"] === "1234") {
 } else {
     http_response_code(401);
 }
+?>
