@@ -99,7 +99,7 @@ nav {
 }
 
 .lipsum-present {
-    background-color: #faa61a;
+    
 }
 
 .present-title {
@@ -181,4 +181,79 @@ nav {
     color: #ffffff;
     padding: 0;
     margin: 0;
+}
+
+.our {
+    margin-top: 570px;
+    display: flex;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+}
+
+.our h2 {
+    text-transform: uppercase;
+    font-family: Source Sans Pro Bold;
+}
+
+.services,
+.contact {
+    flex-basis: 30%;
+    margin-left: 10px;
+}
+
+.services ul {
+    display: block;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.services li {
+    list-style-image: url("../img/list.png");
+    padding-bottom: 20px;
+}
+
+.services a {
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit
+}
+.know {
+    flex-basis: 45%;
+    padding: 0 15px ;
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+}
+
+.contact ul {
+    display: block;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.contact li {
+    list-style-image: url("../img/icons-1.png");
+    margin-left: 15px;
+    padding-bottom: 15px;
+}
+
+.contact p {
+    font-size: 18px;
+    font-family: Source Sans Pro Bold;
+    color: #ffffff;
+    background-color: #000000;
+    width: 110px; 
+    padding: 5px;
+}
+
+.icons2 {
+    list-style-image: url("../img/icons-2.png");
+}
+
+.icons3 {
+    list-style-image: url("../img/icons-3.png");
+}
+
+.icons4 {
+    list-style-image: url("../img/icons-4.png");
 }
