@@ -62,17 +62,20 @@ div {
 }
 
 .lispum-media,
-.lispum-title {
+.lispum-title,
+.footer-flex {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.lispum-title {
+.lispum-title,
+.cols-one {
     flex-basis: 31%;
 }
 
-.lispum-menu {
+.lispum-menu,
+.cols-two {
     flex-grow: 3;
 }
 
@@ -256,4 +259,34 @@ nav {
 
 .icons4 {
     list-style-image: url("../img/icons-4.png");
+}
+
+.our-clients {
+    padding-top: 450px;
+}
+
+.footer-flex {
+    padding-top: 50px;
+}
+
+.footer-menu {
+    margin-left: 200px;
+    padding: 0;
+}
+
+.footer-menu ul {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+}
+
+.footer-menu li {
+    display: block;
+    margin-right: 22px;
+}
+
+.footer-menu a {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Source Sans Pro Light;
+    text-decoration: none;
 }
