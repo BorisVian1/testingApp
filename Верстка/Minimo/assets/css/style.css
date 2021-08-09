@@ -1,0 +1,166 @@
+body {
+    font-family: Playfair Display, sans-serif;
+    color: #626262;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix {
+    content: '';
+    width: 100%;
+    display: table;
+    clear: both;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    width: 551px;
+    height: 200px;
+}
+
+#minimo-foto {
+    background: url('../img/fone.jpg') no-repeat center top / cover;
+    height: 551px;
+    margin: 0px 50px 0px 50px;
+}
+
+.container {
+    width: 912px;
+    margin: 0 auto;
+}
+
+.minimo {
+    display: flex;
+    margin: 0px 50px 0px 50px;
+}
+
+.minimo-title {
+    font-size: 24px;
+    color: #222222;
+}
+
+nav {
+    float: right;
+    margin-top: 40px;
+}
+
+.menu {
+    display: flex;
+}
+.menu li {
+    display: block;
+    list-style: none;
+    margin-left: 183px;
+}
+
+.menu a {
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Playfair Display Regular;
+}
+
+.title-diary {
+    color: #b8b2a4;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 99px;
+}
+
+.perfect {
+    margin-top: 31px;
+}
+
+.perfect h1 {
+    font-size: 30px;
+}
+
+.perfect p {
+    line-height: 1.55em;
+    margin-top: 30px;
+}
+
+.life-style {
+    display: flex;
+    margin-top: 136px;
+}
+
+.col-1 {
+    flex-basis: 25%;
+    color: #b8b2a4;
+    text-transform: uppercase;
+}
+
+.col-1 h3,
+.col-2 h3,
+.newsletter h3 {
+    color: #626262;
+    font-size: 20px;
+}
+
+.col-1 p,
+.col-2 p {
+    text-transform: lowercase;
+    color: #626262;
+    font-size: 12px;
+    line-height: 1.55em;
+}
+
+.col-2 {
+    flex-grow: 1;
+    margin-left: 58px;
+    color: #b8b2a4;
+    text-transform: uppercase;
+}
+
+.logo {
+    margin-top: 119px;
+}
+
+#sign {
+    background: #f0f0f0;
+    height: 286px;
+    width: 100%;
+}
+
+.newsletter {
+    text-align: center;
+    padding-top: 78px;
+}
+
+.newsletter input {
+    width: 365px;
+    height: 29px;
+    border: none;
+    border-bottom: 1px solid #626262;    
+    background: #f0f0f0;
+    outline: none;
+    cursor: text;
+}
+
+.newsletter button {
+    height: 34px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-style {
+    background: #ffffff;
+    color: #626262;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    width: 158px;
+    padding: 15px 0;
+    border: 1px solid #626262;
+    margin: 0 auto;
+    margin-top: 162px;
+    margin-bottom: 300px;
+    cursor: pointer;
+}
+
